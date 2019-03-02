@@ -84,7 +84,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.2879868746" green="0.47975808380000001" blue="0.61570543050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selfie-time" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-Ly-MNm">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="second-picture" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-Ly-MNm">
                                 <rect key="frame" x="0.0" y="155" width="375" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -154,11 +154,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selfie-time" translatesAutoresizingMaskIntoConstraints="NO" id="yhl-Ev-3mn">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="second-picture" translatesAutoresizingMaskIntoConstraints="NO" id="yhl-Ev-3mn">
                                 <rect key="frame" x="53" y="116" width="231" height="189"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="second-picture" translatesAutoresizingMaskIntoConstraints="NO" id="c2C-ib-P9y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="first-picture" translatesAutoresizingMaskIntoConstraints="NO" id="c2C-ib-P9y">
                                 <rect key="frame" x="171" y="230" width="152" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -298,9 +298,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="first-picture" width="525" height="429"/>
         <image name="logo" width="2000" height="747"/>
         <image name="qr-code" width="167" height="165"/>
         <image name="second-picture" width="222" height="193"/>
-        <image name="selfie-time" width="840" height="561"/>
     </resources>
 </document>
