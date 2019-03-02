@@ -23,11 +23,8 @@ class StartingViewController: UIViewController {
     
     @IBAction func startButtonPressed(_ sender: Any) {
         loadingScreen()
-        let when = DispatchTime.now() + 5
-        DispatchQueue.main.asyncAfter(deadline: when){
-
-            ViewController.notificationShow()
-        }
+        
+        
     
     }
     
@@ -44,8 +41,13 @@ class StartingViewController: UIViewController {
         loadingIndicator.style = UIActivityIndicatorView.Style.gray
         loadingIndicator.startAnimating();
         alert.view.addSubview(loadingIndicator)
+        let when = DispatchTime.now() + 5
         present(alert, animated: true, completion: {(
-            self.performSegue(withIdentifier: "segue1", sender: self) )})
+            ViewController.notificationShow(),
+            DispatchQueue.main.asyncAfter(deadline: when){
+                self.performSegue(withIdentifier: "segue1", sender: self)
+            }
+            )})
         
     }
    

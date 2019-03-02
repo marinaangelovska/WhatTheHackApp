@@ -18,17 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selfie-time" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-Ly-MNm">
-                                <rect key="frame" x="0.0" y="155" width="375" height="243"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is your future friend!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeE-8l-u5o">
-                                <rect key="frame" x="16" y="105" width="343" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
-                                <color key="textColor" red="0.1843137255" green="0.20784313730000001" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-wP-TJy">
                                 <rect key="frame" x="0.0" y="398" width="375" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -70,7 +59,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                 <state key="normal" title="I found her!">
-                                    <color key="titleColor" red="0.37417830151270037" green="0.44796279887414531" blue="0.65521890862944154" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.2879868746" green="0.47975808380000001" blue="0.61570543050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="chatButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJg-gI-iBJ"/>
@@ -90,6 +79,22 @@
                                     <segue destination="Cik-4R-uit" kind="show" id="3DK-yJ-e68"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdZ-rH-G9D">
+                                <rect key="frame" x="0.0" y="88" width="375" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.2879868746" green="0.47975808380000001" blue="0.61570543050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selfie-time" translatesAutoresizingMaskIntoConstraints="NO" id="1jj-Ly-MNm">
+                                <rect key="frame" x="0.0" y="155" width="375" height="243"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is your future friend!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeE-8l-u5o">
+                                <rect key="frame" x="16" y="106" width="343" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.38431372549999998" green="0.53333333329999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -106,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918" y="52"/>
+            <point key="canvasLocation" x="917.60000000000002" y="51.724137931034484"/>
         </scene>
         <!--APP LOGO-->
         <scene sceneID="Rw2-OY-8Zo">
@@ -119,9 +124,6 @@
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6v4-DQ-PgS">
                                 <rect key="frame" x="0.0" y="149" width="375" height="663"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <connections>
-                                    <segue destination="wMh-cP-YEg" kind="embed" id="1rr-eU-zy5"/>
-                                </connections>
                             </containerView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Start typing..." minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="LGe-Nz-aah" customClass="EmojiTextField" customModule="WhatTheHackApp" customModuleProvider="target">
                                 <rect key="frame" x="16" y="748" width="343" height="30"/>
@@ -142,7 +144,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PW-ef-Qf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="mge-2C-gzV"/>
             </objects>
-            <point key="canvasLocation" x="1877.5999999999999" y="-3.6945812807881775"/>
+            <point key="canvasLocation" x="1926" y="-236"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="oO7-a8-4ax">
@@ -224,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5y-B6-i6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2669.5999999999999" y="-4.4334975369458132"/>
+            <point key="canvasLocation" x="1926" y="437"/>
         </scene>
         <!--Starting View Controller-->
         <scene sceneID="X95-gR-ljr">
@@ -256,7 +258,7 @@
                     </view>
                     <connections>
                         <outlet property="startSearchingButton" destination="GtV-KQ-tVw" id="2q2-KU-uCK"/>
-                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue1" id="cEC-9I-uGz"/>
+                        <segue destination="Tro-zC-BZy" kind="show" identifier="segue1" id="CLX-Ga-Vu7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1X-7a-aPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -271,8 +273,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TTE-hZ-Y5t">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.19218146799999999" green="0.39687192440000002" blue="0.55296158790000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="tintColor" red="0.19218146799999999" green="0.39687192440000002" blue="0.55296158790000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.19218146800994873" green="0.39687192440032959" blue="0.55296158790588379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -288,27 +290,22 @@
             <point key="canvasLocation" x="-87" y="-338"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="eIT-51-v7J">
+        <scene sceneID="l0L-ez-wiu">
             <objects>
-                <viewController id="wMh-cP-YEg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kup-j6-F11">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="663"/>
+                <viewController id="VLK-SQ-Hzt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B0T-y4-EOi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mZx-nC-rGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="muZ-pG-dzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="-606"/>
         </scene>
     </scenes>
     <resources>
-        <image name="achivement" width="416" height="416"/>
         <image name="logo" width="1024" height="1024"/>
         <image name="qr-code" width="167" height="165"/>
         <image name="selfie-time" width="840" height="561"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="rxU-ip-V2r"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -23,7 +23,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         makeButtonRound(button: chatButton)
         makeButtonRound(button: foundButton)
        
-        
         UNUserNotificationCenter.current().delegate = self
      
         let topShadow = EdgeShadowLayer(
