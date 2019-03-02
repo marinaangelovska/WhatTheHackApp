@@ -23,6 +23,7 @@ class TimerViewController: UIViewController {
         super.viewDidLoad()
         qrCodeImage.isHidden = true
         scannerLabel.isHidden = true
+        setLogoImage()
         makeImageRound(image: smallImage)
         makeImageRound(image: bigImage)
         timer.invalidate()
@@ -55,6 +56,16 @@ class TimerViewController: UIViewController {
             
         }
     }
+    
+    func setLogoImage() {
+        let image = UIImage(named:"logo")
+        let imageView = UIImageView(frame: CGRect(x:0, y:0, width:70.0, height:50.0))
+        imageView.image = image
+        imageView.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = imageView
+    }
+    
+
     
     func makeImageRound(image: UIImageView) {
         image.layer.masksToBounds = true

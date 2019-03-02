@@ -14,6 +14,8 @@ class ChatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewResizerOnKeyboardShown()
+        setLogoImage()
+        
 
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
             target: self,
@@ -65,6 +67,15 @@ class ChatViewController: UIViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    func setLogoImage() {
+        let image = UIImage(named:"logo")
+        let imageView = UIImageView(frame: CGRect(x:0, y:0, width:50.0, height:50.0))
+        imageView.image = image
+        imageView.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = imageView
+    }
+    
 
 }
 
