@@ -149,7 +149,7 @@ class ChatViewController: UIViewController {
     }
     
     func setLogoImage() {
-        let image = UIImage(named:"logo")
+        let image = UIImage(named:"logo1")
         let imageView = UIImageView(frame: CGRect(x:0, y:0, width:50.0, height:50.0))
         imageView.image = image
         imageView.contentMode = .scaleAspectFit
