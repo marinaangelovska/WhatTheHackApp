@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import UserNotifications
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UNUserNotificationCenterDelegate {
     
     @IBOutlet weak var chatButton: UIButton!
     @IBOutlet weak var foundButton: UIButton!
@@ -21,6 +22,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //tableView.dataSource = self
         makeButtonRound(button: chatButton)
         makeButtonRound(button: foundButton)
+       
+        
+        UNUserNotificationCenter.current().delegate = self
+     
         let topShadow = EdgeShadowLayer(
             forView: shadowView,
             edge: .Top,
@@ -28,6 +33,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             toColor: UIColor.init(red: 0.2, green: 0.2, blue: 0.2, alpha: 0),
             fromColor: UIColor.init(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.15)
         )
+        
         //shadowView.layer.addSublayer(topShadow)
         let bottomShadow = EdgeShadowLayer(
             forView: shadowView,
@@ -38,6 +44,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         )
         shadowView.layer.addSublayer(bottomShadow)
     }
+   
     
     //MARK: TableView functions
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -60,6 +67,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
 
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.sound, .alert])
+    }
+    
+    static func notificationShow() {
+        let content = UNMutableNotificationContent()
+        content.title = "Spypeer notification"
+        content.body = "Get ready for a new spy mission!"
+        content.sound = UNNotificationSound.default
+        content.badge = 1
+        
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+        let request = UNNotificationRequest(identifier: "Welcome", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+    
     //MARK: IBActions
     
     @IBAction func chatButtonPressed(_ sender: Any) {
