@@ -25,9 +25,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aZD-dy-jj1">
                                 <rect key="frame" x="0.0" y="398" width="375" height="132"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.38431372549999998" green="0.53333333329999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="cell" rowHeight="110" id="KYU-pK-bRR" customClass="CustomTableViewCell" customModule="WhatTheHackApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" alpha="0.45000000000000001" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="cell" rowHeight="110" id="KYU-pK-bRR" customClass="CustomTableViewCell" customModule="WhatTheHackApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="110"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KYU-pK-bRR" id="zcU-dp-9rJ">
@@ -46,11 +46,12 @@
                                                     <rect key="frame" x="196" y="56" width="104" height="17"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.38431372549999998" green="0.53333333329999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.25098039220000001" green="0.45098039220000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="firstMedalImage" destination="tg9-KW-Ol6" id="b3l-AJ-cIp"/>
@@ -81,13 +82,19 @@
                                 <state key="normal" title="Chat">
                                     <color key="titleColor" red="0.25098039220000001" green="0.45098039220000002" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="chatButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjq-LH-RZE"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.38431372549999998" green="0.53333333329999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.38431372549999998" green="0.53333333329999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="6XV-0X-MSQ"/>
                     <connections>
+                        <outlet property="chatButton" destination="xEx-Nf-SHH" id="Xuw-Xs-1dq"/>
+                        <outlet property="foundButton" destination="VBx-kP-wWn" id="NNj-QK-osw"/>
                         <outlet property="tableView" destination="aZD-dy-jj1" id="yp3-YG-6WO"/>
                     </connections>
                 </viewController>
