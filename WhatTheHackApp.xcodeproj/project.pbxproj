@@ -15,6 +15,7 @@
 		AE21B0D9222A00150049EE0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE21B0D7222A00150049EE0D /* LaunchScreen.storyboard */; };
 		AE21B0E1222A111D0049EE0D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE21B0E0222A111D0049EE0D /* CustomTableViewCell.swift */; };
 		AE21B0E3222A1B560049EE0D /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE21B0E2222A1B560049EE0D /* TimerViewController.swift */; };
+		AE58E722222A88BD00549170 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58E721222A88BD00549170 /* ChatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AE21B0DA222A00150049EE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE21B0E0222A111D0049EE0D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AE21B0E2222A1B560049EE0D /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		AE58E721222A88BD00549170 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				AE21B0D7222A00150049EE0D /* LaunchScreen.storyboard */,
 				AE21B0DA222A00150049EE0D /* Info.plist */,
 				AE21B0D2222A00130049EE0D /* WhatTheHackApp.xcdatamodeld */,
+				AE58E721222A88BD00549170 /* ChatViewController.swift */,
 			);
 			path = WhatTheHackApp;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				AE21B0D4222A00130049EE0D /* WhatTheHackApp.xcdatamodeld in Sources */,
 				AE21B0CE222A00130049EE0D /* ViewController.swift in Sources */,
 				AE21B0E1222A111D0049EE0D /* CustomTableViewCell.swift in Sources */,
+				AE58E722222A88BD00549170 /* ChatViewController.swift in Sources */,
 				AE21B0CC222A00130049EE0D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

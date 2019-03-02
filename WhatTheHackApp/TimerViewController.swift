@@ -15,7 +15,7 @@ class TimerViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var smallImage: UIImageView!
     @IBOutlet weak var bigImage: UIImageView!
-    var seconds = 10
+    var seconds = 120
     var timer = Timer()
     var isTimerRunning = false //This will be used to make sure only one timer is created at a time.
     
@@ -26,7 +26,7 @@ class TimerViewController: UIViewController {
         makeImageRound(image: smallImage)
         makeImageRound(image: bigImage)
         timer.invalidate()
-        seconds = 10
+        seconds = 120
         timerLabel.text = timeString(time: TimeInterval(seconds))
         runTimer()
     }
