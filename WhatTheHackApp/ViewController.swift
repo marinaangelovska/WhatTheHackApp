@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let bottomShadow = EdgeShadowLayer(
             forView: shadowView,
             edge: .Bottom,
-            shadowRadius: 10,
+            shadowRadius: 7,
             toColor: UIColor.init(red: 0.2, green: 0.2, blue: 0.2, alpha: 0),
             fromColor: UIColor.init(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.15)
         )
