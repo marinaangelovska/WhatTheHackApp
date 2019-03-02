@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tro-zC-BZy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="53P-DD-zAi">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1001" y="-4"/>
+            <point key="canvasLocation" x="918" y="52"/>
         </scene>
         <!--APP LOGO-->
         <scene sceneID="Rw2-OY-8Zo">
@@ -127,6 +127,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PW-ef-Qf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mge-2C-gzV"/>
             </objects>
             <point key="canvasLocation" x="1877.5999999999999" y="-3.6945812807881775"/>
         </scene>
@@ -212,6 +213,43 @@
             </objects>
             <point key="canvasLocation" x="2669.5999999999999" y="-4.4334975369458132"/>
         </scene>
+        <!--Starting View Controller-->
+        <scene sceneID="X95-gR-ljr">
+            <objects>
+                <viewController id="53P-DD-zAi" customClass="StartingViewController" customModule="WhatTheHackApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EeH-wK-r32">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QVq-zo-iY5">
+                                <rect key="frame" x="63" y="175" width="249" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtV-KQ-tVw">
+                                <rect key="frame" x="63" y="428" width="249" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Start searching">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="53P-DD-zAi" eventType="touchUpInside" id="f7L-co-MVg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19218146800994873" green="0.39687192440032959" blue="0.55296158790588379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.19215686274509802" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="SDS-Vh-bgW"/>
+                    </view>
+                    <connections>
+                        <outlet property="startSearchingButton" destination="GtV-KQ-tVw" id="2q2-KU-uCK"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue1" id="cEC-9I-uGz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N1X-7a-aPQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1048.8" y="-4.4334975369458132"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="2gO-vc-1Mv">
             <objects>
@@ -220,6 +258,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TTE-hZ-Y5t">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.19218146799999999" green="0.39687192440000002" blue="0.55296158790000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="tintColor" red="0.19218146799999999" green="0.39687192440000002" blue="0.55296158790000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.19218146800994873" green="0.39687192440032959" blue="0.55296158790588379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -228,7 +272,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tuc-Qs-L2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="77.599999999999994" y="-2.2488755622188905"/>
+            <point key="canvasLocation" x="-87" y="-338"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="eIT-51-v7J">
@@ -242,11 +286,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZx-nC-rGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1194" y="-606"/>
         </scene>
     </scenes>
     <resources>
         <image name="achivement" width="416" height="416"/>
+        <image name="logo" width="1024" height="1024"/>
         <image name="qr-code" width="167" height="165"/>
         <image name="selfie-time" width="840" height="561"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rxU-ip-V2r"/>
+    </inferredMetricsTieBreakers>
 </document>
