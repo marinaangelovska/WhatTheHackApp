@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--APP LOGO-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WhatTheHackApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,6 +39,7 @@
                                 </state>
                                 <connections>
                                     <action selector="chatButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjq-LH-RZE"/>
+                                    <segue destination="Cik-4R-uit" kind="show" id="3DK-yJ-e68"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rgG-wP-TJy">
@@ -80,7 +81,9 @@
                         <color key="tintColor" red="0.38431372549999998" green="0.53333333329999999" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6XV-0X-MSQ"/>
+                    <navigationItem key="navigationItem" title="APP LOGO" id="jCy-QL-Lnm">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ikP-SS-stU"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="chatButton" destination="xEx-Nf-SHH" id="Xuw-Xs-1dq"/>
                         <outlet property="foundButton" destination="IoA-eE-qZS" id="DKi-TE-Yhv"/>
@@ -91,7 +94,7 @@
             </objects>
             <point key="canvasLocation" x="1016.8" y="-2.9556650246305418"/>
         </scene>
-        <!--View Controller-->
+        <!--APP LOGO-->
         <scene sceneID="Rw2-OY-8Zo">
             <objects>
                 <viewController id="Cik-4R-uit" sceneMemberID="viewController">
@@ -101,10 +104,93 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hdc-uo-ght"/>
                     </view>
+                    <navigationItem key="navigationItem" title="APP LOGO" id="yqR-uf-W7P"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PW-ef-Qf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1697" y="-8"/>
+            <point key="canvasLocation" x="1878" y="-3"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="oO7-a8-4ax">
+            <objects>
+                <viewController id="YhN-JP-SSf" customClass="TimerViewController" customModule="WhatTheHackApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jqW-QF-9ec">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selfie-time" translatesAutoresizingMaskIntoConstraints="NO" id="yhl-Ev-3mn">
+                                <rect key="frame" x="53" y="116" width="231" height="189"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="selfie-time" translatesAutoresizingMaskIntoConstraints="NO" id="c2C-ib-P9y">
+                                <rect key="frame" x="171" y="230" width="152" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="    Get to know each other" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yaf-M3-eqg">
+                                <rect key="frame" x="0.0" y="545" width="375" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.81166344820000003" green="0.81166344820000003" blue="0.81166344820000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Favoruite movie" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nB0-Ci-Ek5">
+                                <rect key="frame" x="16" y="599" width="343" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="New library" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1U-FR-Dh0">
+                                <rect key="frame" x="16" y="653" width="343" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sports" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1zl-7f-ObK">
+                                <rect key="frame" x="16" y="707" width="343" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yje-B6-axT">
+                                <rect key="frame" x="79" y="401" width="205" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="qr-code" translatesAutoresizingMaskIntoConstraints="NO" id="VXQ-6E-8rc">
+                                <rect key="frame" x="79" y="255" width="216" height="216"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Scan to prove your friendship!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plO-Ed-z1K">
+                                <rect key="frame" x="47" y="164" width="281" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="5jV-Ki-fhy"/>
+                    </view>
+                    <connections>
+                        <outlet property="bigImage" destination="yhl-Ev-3mn" id="nXc-YR-t6q"/>
+                        <outlet property="qrCodeImage" destination="VXQ-6E-8rc" id="FOY-NY-I7g"/>
+                        <outlet property="scannerLabel" destination="plO-Ed-z1K" id="ZhS-RZ-OzT"/>
+                        <outlet property="smallImage" destination="c2C-ib-P9y" id="FKG-z8-jak"/>
+                        <outlet property="timerLabel" destination="Yje-B6-axT" id="Wia-qZ-fJN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5y-B6-i6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2669.5999999999999" y="-4.4334975369458132"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2gO-vc-1Mv">
@@ -127,6 +213,7 @@
     </scenes>
     <resources>
         <image name="achivement" width="416" height="416"/>
+        <image name="qr-code" width="167" height="165"/>
         <image name="selfie-time" width="840" height="561"/>
     </resources>
 </document>
