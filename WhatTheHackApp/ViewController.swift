@@ -18,8 +18,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.delegate = self
-        //tableView.dataSource = self
+        setLogoImage()
+        
         makeButtonRound(button: chatButton)
         makeButtonRound(button: foundButton)
        
@@ -56,6 +56,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func setLogoImage() {
+        let image = UIImageView.init(image: UIImage(named:"logo"))
+        image.contentMode = .scaleAspectFit
+        self.navigationItem.titleView = image
+        
+    }
     //MARK: Custom functions
     func makeButtonRound(button: UIButton) {
     
@@ -72,8 +78,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     static func notificationShow() {
         let content = UNMutableNotificationContent()
-        content.title = "Spypeer notification"
-        content.body = "Get ready for a new spy mission!"
+        content.title = "Get ready!"
+        content.body = "Tap to see your new spy mission!"
         content.sound = UNNotificationSound.default
         content.badge = 1
         

@@ -111,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917.60000000000002" y="51.724137931034484"/>
+            <point key="canvasLocation" x="767" y="-4"/>
         </scene>
         <!--APP LOGO-->
         <scene sceneID="Rw2-OY-8Zo">
@@ -144,7 +144,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6PW-ef-Qf6" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="mge-2C-gzV"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="-236"/>
+            <point key="canvasLocation" x="1572" y="-381"/>
         </scene>
         <!--Timer View Controller-->
         <scene sceneID="oO7-a8-4ax">
@@ -226,7 +226,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5y-B6-i6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1926" y="437"/>
+            <point key="canvasLocation" x="1572" y="342"/>
         </scene>
         <!--Starting View Controller-->
         <scene sceneID="X95-gR-ljr">
@@ -236,10 +236,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QVq-zo-iY5">
-                                <rect key="frame" x="63" y="175" width="249" height="208"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtV-KQ-tVw">
                                 <rect key="frame" x="63" y="428" width="249" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -251,6 +247,10 @@
                                     <action selector="startButtonPressed:" destination="53P-DD-zAi" eventType="touchUpInside" id="f7L-co-MVg"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="QVq-zo-iY5">
+                                <rect key="frame" x="39" y="212" width="296" height="208"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.19218146800994873" green="0.39687192440032959" blue="0.55296158790588379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.19215686274509802" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -287,24 +287,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tuc-Qs-L2X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-87" y="-338"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="l0L-ez-wiu">
-            <objects>
-                <viewController id="VLK-SQ-Hzt" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="B0T-y4-EOi">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="muZ-pG-dzj" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="-113" y="-4"/>
         </scene>
     </scenes>
     <resources>
-        <image name="logo" width="1024" height="1024"/>
+        <image name="logo" width="2000" height="747"/>
         <image name="qr-code" width="167" height="165"/>
         <image name="selfie-time" width="840" height="561"/>
     </resources>
