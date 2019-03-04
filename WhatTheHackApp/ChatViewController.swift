@@ -11,7 +11,7 @@ import UIKit
 class ChatViewController: UIViewController {
     
     var heightCounter: CGFloat = 70
-    var messages = ["🍟🍔","🔊🎶",""]
+    var messages = ["🍟🍔","🔊🎶"," "]
     var currentMessage = 0
 
     @IBOutlet weak var messageField: EmojiTextField!
@@ -64,6 +64,10 @@ class ChatViewController: UIViewController {
         view.addSubview(label)
         
         heightCounter = heightCounter + bubbleSize.height + 10
+        
+        if (currentMessage >= messages.count) {
+            return;
+        }
         
         let when = DispatchTime.now() + 1.5
         DispatchQueue.main.asyncAfter(deadline: when){

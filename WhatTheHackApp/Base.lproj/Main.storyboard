@@ -240,6 +240,7 @@
                         <outlet property="qrCodeImage" destination="VXQ-6E-8rc" id="FOY-NY-I7g"/>
                         <outlet property="scannerLabel" destination="plO-Ed-z1K" id="ZhS-RZ-OzT"/>
                         <outlet property="smallImage" destination="c2C-ib-P9y" id="FKG-z8-jak"/>
+                        <outlet property="timeDescLabel" destination="D16-4r-Hkd" id="Izf-9I-WmS"/>
                         <outlet property="timerLabel" destination="Yje-B6-axT" id="Wia-qZ-fJN"/>
                     </connections>
                 </viewController>

@@ -10,6 +10,8 @@ import UIKit
 
 class TimerViewController: UIViewController {
 
+    
+    @IBOutlet weak var timeDescLabel: UILabel!
     @IBOutlet weak var scannerLabel: UILabel!
     @IBOutlet weak var qrCodeImage: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
@@ -53,6 +55,7 @@ class TimerViewController: UIViewController {
             bigImage.isHidden = true
             smallImage.isHidden = true
             timerLabel.isHidden = true
+            timeDescLabel.isHidden = true
             
         }
     }
