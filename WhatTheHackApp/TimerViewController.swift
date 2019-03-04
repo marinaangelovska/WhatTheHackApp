@@ -34,7 +34,6 @@ class TimerViewController: UIViewController {
         runTimer()
     }
     
-    //MARK: Custom functions
     func runTimer() {
         timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(TimerViewController.updateTimer)), userInfo: nil, repeats: true)
     }
@@ -67,8 +66,6 @@ class TimerViewController: UIViewController {
         imageView.contentMode = .scaleAspectFit
         self.navigationItem.titleView = imageView
     }
-    
-
     
     func makeImageRound(image: UIImageView) {
         image.layer.masksToBounds = true

@@ -21,7 +21,6 @@ class ChatViewController: UIViewController {
         setupViewResizerOnKeyboardShown()
         setLogoImage()
         
-
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(
             target: self,
             action: #selector(dismissKeyboard))

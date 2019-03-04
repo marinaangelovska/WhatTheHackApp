@@ -23,9 +23,6 @@ class StartingViewController: UIViewController {
     
     @IBAction func startButtonPressed(_ sender: Any) {
         loadingScreen()
-        
-        
-    
     }
     
     func makeButtonRound(button: UIButton) {
@@ -35,7 +32,6 @@ class StartingViewController: UIViewController {
         button.layer.borderColor = button.titleLabel?.textColor.cgColor;
         
     }
-
     func loadingScreen() {
         loadingIndicator.hidesWhenStopped = true
         loadingIndicator.style = UIActivityIndicatorView.Style.gray
@@ -50,8 +46,5 @@ class StartingViewController: UIViewController {
             )})
         
     }
-   
-
-    
 
 }

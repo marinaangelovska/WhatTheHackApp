@@ -62,7 +62,6 @@
                                     <color key="titleColor" red="0.2879868746" green="0.47975808380000001" blue="0.61570543050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="chatButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJg-gI-iBJ"/>
                                     <segue destination="YhN-JP-SSf" kind="show" id="mMG-v7-TEo"/>
                                 </connections>
                             </button>
@@ -75,7 +74,6 @@
                                     <color key="titleColor" red="0.33553209645298837" green="0.65521890862944154" blue="0.27249229196951519" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="chatButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tjq-LH-RZE"/>
                                     <segue destination="Cik-4R-uit" kind="show" id="3DK-yJ-e68"/>
                                 </connections>
                             </button>
@@ -272,7 +270,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.19218146800994873" green="0.39687192440032959" blue="0.55296158790588379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.2879868746" green="0.47975808380000001" blue="0.61570543050000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.19215686274509802" green="0.396078431372549" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="SDS-Vh-bgW"/>
                     </view>

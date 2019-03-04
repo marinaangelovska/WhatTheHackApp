@@ -9,11 +9,10 @@
 import UIKit
 import UserNotifications
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UNUserNotificationCenterDelegate {
+class ViewController: UIViewController, UNUserNotificationCenterDelegate {
     
     @IBOutlet weak var chatButton: UIButton!
     @IBOutlet weak var foundButton: UIButton!
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var shadowView: UIView!
     
     override func viewDidLoad() {
@@ -32,8 +31,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             toColor: UIColor.init(red: 0.2, green: 0.2, blue: 0.2, alpha: 0),
             fromColor: UIColor.init(red: 0.2, green: 0.2, blue: 0.2, alpha: 0.15)
         )
-        
-        //shadowView.layer.addSublayer(topShadow)
+    
         let bottomShadow = EdgeShadowLayer(
             forView: shadowView,
             edge: .Bottom,
@@ -43,26 +41,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         )
         shadowView.layer.addSublayer(bottomShadow)
     }
-   
-    
-    //MARK: TableView functions
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath) as! CustomTableViewCell
-       
-        return cell
-    }
-    
+
     func setLogoImage() {
         let image = UIImageView.init(image: UIImage(named:"logo"))
         image.contentMode = .scaleAspectFit
         self.navigationItem.titleView = image
         
     }
-    //MARK: Custom functions
+    
     func makeButtonRound(button: UIButton) {
     
         button.backgroundColor = .clear
@@ -88,11 +74,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
-    
-    //MARK: IBActions
-    
-    @IBAction func chatButtonPressed(_ sender: Any) {
-    }
+
 }
 
 public class EdgeShadowLayer: CAGradientLayer {

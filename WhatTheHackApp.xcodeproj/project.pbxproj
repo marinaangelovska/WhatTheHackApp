@@ -13,7 +13,6 @@
 		AE21B0D4222A00130049EE0D /* WhatTheHackApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE21B0D2222A00130049EE0D /* WhatTheHackApp.xcdatamodeld */; };
 		AE21B0D6222A00150049EE0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE21B0D5222A00150049EE0D /* Assets.xcassets */; };
 		AE21B0D9222A00150049EE0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE21B0D7222A00150049EE0D /* LaunchScreen.storyboard */; };
-		AE21B0E1222A111D0049EE0D /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE21B0E0222A111D0049EE0D /* CustomTableViewCell.swift */; };
 		AE21B0E3222A1B560049EE0D /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE21B0E2222A1B560049EE0D /* TimerViewController.swift */; };
 		AE58E722222A88BD00549170 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58E721222A88BD00549170 /* ChatViewController.swift */; };
 		AE58E724222A959F00549170 /* StartingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE58E723222A959F00549170 /* StartingViewController.swift */; };
@@ -28,7 +27,6 @@
 		AE21B0D5222A00150049EE0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AE21B0D8222A00150049EE0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE21B0DA222A00150049EE0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AE21B0E0222A111D0049EE0D /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		AE21B0E2222A1B560049EE0D /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		AE58E721222A88BD00549170 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		AE58E723222A959F00549170 /* StartingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +67,6 @@
 				AE21B0CD222A00130049EE0D /* ViewController.swift */,
 				AE58E721222A88BD00549170 /* ChatViewController.swift */,
 				AE21B0E2222A1B560049EE0D /* TimerViewController.swift */,
-				AE21B0E0222A111D0049EE0D /* CustomTableViewCell.swift */,
 				AE21B0CF222A00130049EE0D /* Main.storyboard */,
 				AE21B0D5222A00150049EE0D /* Assets.xcassets */,
 				AE21B0D7222A00150049EE0D /* LaunchScreen.storyboard */,
@@ -153,7 +150,6 @@
 				AE21B0E3222A1B560049EE0D /* TimerViewController.swift in Sources */,
 				AE21B0D4222A00130049EE0D /* WhatTheHackApp.xcdatamodeld in Sources */,
 				AE21B0CE222A00130049EE0D /* ViewController.swift in Sources */,
-				AE21B0E1222A111D0049EE0D /* CustomTableViewCell.swift in Sources */,
 				AE58E724222A959F00549170 /* StartingViewController.swift in Sources */,
 				AE58E722222A88BD00549170 /* ChatViewController.swift in Sources */,
 				AE21B0CC222A00130049EE0D /* AppDelegate.swift in Sources */,
